@@ -29,9 +29,9 @@ public class RespostaTemp extends AppCompatActivity {
         btnVoltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent btnVoltar = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(btnVoltar);
+                onBackPressed();
             }
         });
     }
+
 }

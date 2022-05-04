@@ -15,16 +15,21 @@ public class MainActivity extends AppCompatActivity {
     private Button btnFahrenheit;
     private EditText entradaUser;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setSetupView();
+        setListener();
+    }
 
+    private void setSetupView() {
         btnCelsius = findViewById(R.id.btnCelsius);
         btnFahrenheit = findViewById(R.id.btnFahrenheit);
         entradaUser = findViewById(R.id.userDigitar);
+    }
 
+    private void setListener() {
         btnCelsius.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("DefaultLocale")
             @Override
@@ -48,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intentBtnF);
             }
         });
-
     }
 }
+
+
