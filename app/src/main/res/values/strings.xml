@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Temperatura</string>
+    <string name="resp_para_user">resposta</string>
+    <string name="format_graus_celsius">"%.1f" °C</string>
+    <string name="format_graus_Fahrenheit">"%.1f" °F</string>
+    <string name="mensagem_aviso_error">Digite um Número</string>
 </resources>
